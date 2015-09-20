@@ -1,0 +1,12 @@
+<header-bar></header-bar>
+<container>
+    <form ng-submit="forgot.forgot()">
+        <input type="text" ng-model="email" style="width:100%" placeholder="Lovett Email..." />
+        <br />
+        <input type="submit" style="width:100%" class="button button-primary" value="Reset Password" />
+        <br />
+    </form>
+    <a ui-sref="login"><i class="fa fa-arrow-left">&nbsp;</i>Login</a>
+    <br />
+    <span style="color:#db3340">{{oops}}</span>
+</container>

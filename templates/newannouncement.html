@@ -1,0 +1,12 @@
+<header-bar></header-bar>
+<container ng-show="authenticated">
+    <input ng-model="announcement.name" type="text" style="width:100%" placeholder="Your (Author's) Name..." />
+    <br />
+    <textarea ng-model="announcement.announcement" style="width:100%; height:100px" placeholder="Compose your announcement here..."></textarea>
+    <br />
+    <button ng-click="announcement.saveAnnouncement()" style="width:100%" class="button-primary">Publish Announcement</button>
+</container>
+<container ng-hide="authenticated">
+    <h1 style="text-align:center">Please authenticate before you can post an announcement.</h1>
+    <button style="width:100%" class="button-primary" ui-sref="login">Retry</button>
+</container>

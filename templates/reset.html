@@ -1,0 +1,14 @@
+<header-bar></header-bar>
+<container>
+    <form ng-submit="reset.reset()">
+        <input type="text" ng-model="reset.email" style="width:100%" placeholder="Lovett Email..." />
+        <br />
+        <input type="password" ng-model="reset.oldpassword" style="width:100%" placeholder="Reset Code..." />
+        <br />
+        <input type="password" ng-model="reset.newpassword" style="width:100%" placeholder="New Password..." />
+        <br />
+        <input type="submit" style="width:100%" class="button button-primary" value="Reset Password" />
+        <br />
+    </form>
+    <span style="color:#db3340">{{oops}}</span>
+</container>

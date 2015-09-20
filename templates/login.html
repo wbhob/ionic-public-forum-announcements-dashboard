@@ -1,0 +1,13 @@
+<header-bar></header-bar>
+<container>
+    <form ng-submit="login.login()">
+        <input type="text" ng-model="login.username" style="width:100%" placeholder="Lovett Email..." />
+        <br />
+        <input type="password" ng-model="login.password" style="width:100%" placeholder="Password..." />
+        <br />
+        <input type="submit" style="width:100%" class="button button-primary" value="Login" />
+        <br />
+    </form>
+    <a ui-sref="forgot">Forgot Password? <i class="fa fa-arrow-right"></i></a>
+    <span style="color:#db3340">{{oops.code}}</span>
+</container>
