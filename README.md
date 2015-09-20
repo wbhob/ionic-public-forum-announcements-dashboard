@@ -12,3 +12,8 @@ Customization
 -------------
 
 If you don't want users to be able to reset their password willy-nilly, then just delete the states in app.js. You can also change the CSS if you want.
+
+License
+-------
+
+ionic-public-forum-announcements-dashboard is licensed under the MIT Open Source license.
