@@ -19,4 +19,4 @@ angular.module("app", ["firebase", "app.controllers", "ui.router", "app.directiv
     controller:"ResetCtrl as reset"
   });
   $urlRouterProvider.otherwise("/");
-})
+});
