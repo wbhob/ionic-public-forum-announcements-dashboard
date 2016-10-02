@@ -6,11 +6,11 @@ angular.module("app.controllers", [])
 		};
 		vm.login = function() {
 			var auth = $firebaseAuth();
-			auth.$signInWithEmailAndPassword(vm.username, vm.password).then(function(error, authData) {
-				if (!error) {
-					$rootScope.authenticated = true;
-					$state.go("new");
-				}
+			auth.$signInWithEmailAndPassword(vm.username, vm.password).then(function(authData) {
+				$rootScope.authenticated = true;
+				$state.go("new");
+			}).catch(function(error) {
+				console.error(error);
 			});
 		};
 	})
